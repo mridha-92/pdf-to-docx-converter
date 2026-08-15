@@ -1,0 +1,3 @@
+/* App-level styles are primarily Tailwind utility classes.
+   This file is imported in main.jsx for any non-Tailwind globals.
+*/
