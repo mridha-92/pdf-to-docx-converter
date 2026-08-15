@@ -5,8 +5,8 @@ services:
       dockerfile: backend/Dockerfile
     ports:
       - "8000:8000"
-    volumes:
-      - backend_data:/app/uploads
+    environment:
+      - PYTHONUNBUFFERED=1
 
   frontend:
     build:
@@ -16,6 +16,3 @@ services:
       - "5173:5173"
     depends_on:
       - backend
-
-volumes:
-  backend_data:
